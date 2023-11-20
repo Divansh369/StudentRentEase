@@ -1,0 +1,80 @@
+<html >
+<head>
+  <title>Availability Calendar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 2px;
+    }
+
+    .calendar-item {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .vacant {
+      background-color: green;
+      color: white;
+    }
+
+    .occupied {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Availability Calendar</h1>
+    
+    <div class="calendar">
+      <div class="calendar-item vacant">January 2023</div>
+      <div class="calendar-item occupied">February 2023</div>
+      <div class="calendar-item occupied">March 2023</div>
+      <div class="calendar-item occupied">April 2023</div>
+      <div class="calendar-item occupied">May 2023</div>
+      <div class="calendar-item vacant">June 2023</div></br>
+      <div class="calendar-item vacant">July 2023</div>
+      <div class="calendar-item occupied">August 2023</div>
+      <div class="calendar-item occupied">September 2023</div>
+      <div class="calendar-item occupied">October 2023</div>
+      <div class="calendar-item occupied">November 2023</div>
+      <div class="calendar-item vacant">December 2023</div></br>
+      <div class="calendar-item vacant">January 2024</div>
+      <div class="calendar-item vacant">February 2024</div>
+      <div class="calendar-item vacant">March 2024</div>
+      <div class="calendar-item vacant">April 2024</div>
+      <div class="calendar-item vacant">May 2024</div>
+      <div class="calendar-item vacant">June 2024</div></br>
+      <div class="calendar-item vacant">July 2024</div>
+      <div class="calendar-item vacant">August 2024</div>
+      <div class="calendar-item vacant">September 2024</div>
+      <div class="calendar-item vacant">October 2024</div>
+      <div class="calendar-item vacant">November 2024</div>
+      <div class="calendar-item vacant">December 2024</div>
+    </div>
+  </div>
+</body>
+</html>

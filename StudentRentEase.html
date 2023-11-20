@@ -1,0 +1,88 @@
+<html>
+<head>
+  <title>StudentRentEase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      display: none;
+    }
+
+    .content {
+      background-image: 'college.jpg';
+      background-size: cover;
+      color: black;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#user_registration">User Registration</a></li>
+        <li><a href="#property_details">Property Details</a></li>
+        <li><a href="#availability_calendar">Availability Calendar</a></li>
+        <li><a href="#property_search">Property Search</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <iframe id="user_registration" src="index.html"></iframe>
+    <iframe id="property_details" src="properties.html"></iframe>
+    <iframe id="availability_calendar" src="calendar.html"></iframe>
+    <iframe id="property_search" src="search.html"></iframe>
+</div>
+    <div class="content">
+      <h2>StudentRentEase</h2>
+      <p>“StudentRentEase" is an innovative online platform that aims to transform the traditional approach to property management and rental listings</p>
+      <h2>Developed by</h2>
+      <p>Divansh Prasad (210968140)</p>
+    
+  </div>
+
+  <script>
+    // JavaScript to toggle iframe visibility based on the clicked tab
+    const iframes = document.querySelectorAll('iframe');
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    navLinks.forEach((link, index) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        iframes.forEach(iframe => {
+          iframe.style.display = 'none';
+        });
+        iframes[index].style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>
+
